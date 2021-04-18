@@ -10,11 +10,26 @@
   </head>
 
   <body>
+    <header>
       <% if user_signed_in? %>
+      <li>
+      <a href="/">Home</a>
+      </li>
+      <li>
+      <a herf="">Users</a>
+      </li>
+      <li>
+      <a herf="">Books</a>
+      </li>
       <li>
         <%= link_to "Log out", destroy_user_session_path, method: :delete %>
       </li>
     <% else %>
+     <li>
+      <a href="/">Home</a>
+     <li>
+       <a href="/about">About</a>
+     </li>
       <li>
         <%= link_to "Sign UP", new_user_registration_path %>
       </li>
@@ -23,5 +38,6 @@
       </li>
     <% end %>
     <%= yield %>
+    </header>
   </body>
 </html>
