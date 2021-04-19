@@ -4,9 +4,13 @@
   <%= f.text_field :title %>
   <h4>Opinion</h4>
   <%= f.text_area :body %>
-  <%= f.submit 'Create book' %>
-  <%= link_to book_path(@book.id) do %>
+  <p><%= f.submit 'Update book' %></p>
+  <table>
+    <th><%= link_to book_path(@book.id) do %>
     <p>Show</p>
-    <a href="/books">Back</a>
+    </th>
+    <th>|</th>
+    <th><a href="/books">Back</a></th>
+  </table>
   <% end %>
 <% end %>

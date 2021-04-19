@@ -1,11 +1,37 @@
-<% @books.each do |book| %>
+<body>
+<h1>Books</h1>
+ <table>
+   <thead>
+     <tr>
+       <th><p></p></th>
+       <th><p>Title</p></th>
+       <th><p>Opinion</p></th>
+     </tr>
+   </thead>
+  <tbody>
+    <% @books.each do |book| %>
+    <tr>
+      <td><p><%= attachment_image_tag book.user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %></p>
+      </td>
+      <td><%= link_to book_path(book.id) do %>
+        <p><%= book.title %></p>
+           <% end %>
+      </td>
+      <td><p><%= book.body %></p>
+             <% end %>
+      </td>
+    </tr>
+  </tbody>
+ </table>
+  </body>
+
 <div>
-  <%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
-  <%= link_to book_path(book.id) do %>
-  <p>Title：<%= book.title %></p>
-  <% end %>
-  <p>Opinion：<%= book.body %></p>
-<% end %>
+<h1>User Info</h1>
+ <%= attachment_image_tag current_user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
+  <p>Name:<%= current_user.name %></p>
+  <p></p>
+  <p>Introduciton:<%= current_user.introduction %></p>
+  <p><%= link_to "プロフィール編集", edit_user_path(current_user) %></p>
 </div>
 <h1>New book</h1>
 <%= form_with model: @book, local:true do |f| %>
