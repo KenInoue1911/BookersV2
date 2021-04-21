@@ -1,18 +1,32 @@
+<main>
  <% if flash[:notice] %>
-     <p id="notice">
-       <%= flash[:notice] %>
-     </p>
-   <% end %>
-<body>
-  <main>
-    <h1>Welcome to Bookers2</h1>
-    <p>In<strong>Bookers2</strong></p>
-    <p>about various Books!</p>
-    <li>
-        <%= link_to "Sign UP", new_user_registration_path %>
-    </li>
-     <li>
-        <%= link_to "Log in", new_user_session_path %>
-    </li>
+  <p id="notice"></p>
+  <%= flash[:notice] %>
+  <% end %>
+  <div class="contaier">
+    <div class="row">
+      <div class="mx-auto col-10 col-lg-8 col-xl-6">
+       <h1>Welcome to <i class="fas fa-book"></i><strong>Bookers2</strong></h1>
+       <p>In<i class="fas fa-book"></i><strong>Bookers2</strong></p>
+       <p>about various Books!</p>
+       <div class="btn-wrapper col-10 mx-auto">
+         <div class="row">
+           <a class="btn btn-info btn-sm btn-block mb-3 sign-in" href="/users/sign_in">Log In</a>
+         </div>
+         <div class="row">
+           <a class="btn btn-success btn-sm btn-block sign_up" href="/users/sign_up">Sign Up</a>
+         </div>
+       </div>
+     </div>
+    </div>
+  </div>
   </main>
-</body>
+  <footer>
+     <div class="container mt-5">
+      <div class="row">
+       <div class="mx-auto">
+        <p>CopyRight KenInoue.inc</p> 
+       </div>
+      </div>
+     </div>
+   </footer>

@@ -4,6 +4,7 @@
     <title>Bookers2</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -11,39 +12,44 @@
 
   <body>
     <header>
-      <% if user_signed_in? %>
-      <li>
-        Bookers
-      </li>
-      <li>
-      <%= link_to 'Home', user_path(current_user.id) %>
-      </li>
-      <li>
-      <a href="/users">Users</a>
-      </li>
-      <li>
-      <a href="/books">Books</a>
-      </li>
-      <li>
-        <%= link_to "Log out", destroy_user_session_path, method: :delete %>
-      </li>
-    <% else %>
-     <li>
-      Bookers
-     </li>
-     <li>
-      <a href="/">Home</a>
-     <li>
-       <a href="/about">About</a>
-     </li>
-      <li>
-        <%= link_to "Sign UP", new_user_registration_path %>
-      </li>
-      <li>
-        <%= link_to "Log in", new_user_session_path %>
-      </li>
-    <% end %>
-    <%= yield %>
-    </header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <div class="container-fluid a">
+          <a class="navbar-brand" href="/"><%=image_tag('logo.png') %> bookers</a>
+          
+            <ul class="navbar-nav navbar-right">
+              <% if user_signed_in? %>
+              <li class="nav-item">
+                <%= link_to 'Home', user_path(current_user.id), class:"fas fa-home nav-link text-dark" %>
+              </li>
+              <li class="nav-item">
+               <a class="fas fa-users nav-link text-dark" href="/users" >Users</a>
+              </li>
+               <li class="nav-item">
+               <a class="fas fa-book-open nav-link text-dark" href="/books">Books</a>
+               </li>
+              <li class="nav-item">
+               <%= link_to "Logout", destroy_user_session_path, method: :delete, class:"fas fa-sign-out-alt nav-link text-dark" %>
+              </li>
+            　<% else %>
+               <li class="nav-item">
+                 <a class="fas fa-home nav-link text-dark" href="/">Home</a>
+                </li>
+               <li class="nav-item">
+                 <a class="fas fa-link nav-link text-dark" href="/about">About</a>
+               </li>
+                <li class="nav-item">
+                 <%= link_to "Sign UP", new_user_registration_path, class:"fas fa-user-plus nav-link text-dark" %>
+                </li>
+                <li class="nav-item">
+                  <%= link_to "Log In", new_user_session_path, class:"fas fa-sign-in-alt nav-link text-dark" %>
+                </li>
+      　　　　　　　<% end %>
+  　　　　 　　　  </ul>
+        </div>
+  　   </nav>
+  　</header>
+  　<%= yield %>
   </body>
 </html>
+
