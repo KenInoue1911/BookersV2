@@ -13,10 +13,10 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        
+
         <div class="container-fluid a">
           <a class="navbar-brand" href="/"><%=image_tag('logo.png') %> bookers</a>
-          
+
             <ul class="navbar-nav navbar-right">
               <% if user_signed_in? %>
               <li class="nav-item">
@@ -36,13 +36,13 @@
                  <a class="fas fa-home nav-link text-dark" href="/">Home</a>
                 </li>
                <li class="nav-item">
-                 <a class="fas fa-link nav-link text-dark" href="/about">About</a>
+                 <a class="fas fa-link nav-link text-dark" href="/homes/about">About</a>
                </li>
                 <li class="nav-item">
                  <%= link_to "Sign UP", new_user_registration_path, class:"fas fa-user-plus nav-link text-dark" %>
                 </li>
                 <li class="nav-item">
-                  <%= link_to "Log In", new_user_session_path, class:"fas fa-sign-in-alt nav-link text-dark" %>
+                  <%= link_to "LogIn", new_user_session_path, class:"fas fa-sign-in-alt nav-link text-dark" %>
                 </li>
       　　　　　　　<% end %>
   　　　　 　　　  </ul>
