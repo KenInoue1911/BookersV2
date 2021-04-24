@@ -10,20 +10,19 @@
      <h1>Editing Book</h1>
      <%= form_with model: @book, local:true do |f| %>
      <div class="form-group">
-       <label for="book_title">Title</label>
-        <input class="form-control book_title" type="text" name="book[title]" id="book_title">
+       <p>Title</p>
+       <%= f.text_field :title %>
      </div>
      <div class="form-group">
-       <label for="book_opinion">Opinion</label>
-       <textarea class="form-control book_body" name="book[body]" id="book_body"></textarea>
+       <p>Opinion</p>
+       <%= f.text_area :body %>
      </div>
      <div class="form-group">
-       <input type="submit" name="commit" value="Update Book" class="btn btn-success" data-disable-with="Update Book">
+       <%= f.submit 'Update Book' %>
      </div>
-     <%= link_to book_path(@book.id) do %>Show
+     <%= link_to "Show", book_path(@book.id) %>
      <a>|</a>
-     <a href="/books">Back</a>
-     <% end %>
+     <%= link_to "Back", books_path %>
      <% end %>
    </div>
   </div>

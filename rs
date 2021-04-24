@@ -139,8 +139,8 @@ Userモデルのテスト
     表示の確認
 [32m      URLが正しい[0m
 [32m      「Editing Book」と表示される[0m
-[31m      title編集フォームが表示される (FAILED - 1)[0m
-[31m      opinion編集フォームが表示される (FAILED - 2)[0m
+[32m      title編集フォームが表示される[0m
+[32m      opinion編集フォームが表示される[0m
 [32m      Update Bookボタンが表示される[0m
 [32m      Showリンクが表示される[0m
 [32m      Backリンクが表示される[0m
@@ -151,7 +151,7 @@ Userモデルのテスト
   ユーザ一覧画面のテスト
     表示内容の確認
 [32m      URLが正しい[0m
-[31m      自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する (FAILED - 3)[0m
+[31m      自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する (FAILED - 1)[0m
 [32m      自分と他人の名前がそれぞれ表示される[0m
 [32m      自分と他人のshowリンクがそれぞれ表示される[0m
     サイドバーの確認
@@ -182,9 +182,9 @@ Userモデルのテスト
   自分のユーザ情報編集画面のテスト
     表示の確認
 [32m      URLが正しい[0m
-[31m      名前編集フォームに自分の名前が表示される (FAILED - 4)[0m
+[31m      名前編集フォームに自分の名前が表示される (FAILED - 2)[0m
 [32m      画像編集フォームが表示される[0m
-[31m      自己紹介編集フォームに自分の自己紹介文が表示される (FAILED - 5)[0m
+[31m      自己紹介編集フォームに自分の自己紹介文が表示される (FAILED - 3)[0m
 [32m      Update Userボタンが表示される[0m
     更新成功のテスト
 [32m      nameが正しく更新される[0m
@@ -196,9 +196,9 @@ Userモデルのテスト
 [32m    ユーザ新規登録成功時[0m
 [32m    ユーザログイン成功時[0m
 [32m    ユーザログアウト成功時[0m
-[31m    ユーザのプロフィール情報更新成功時 (FAILED - 6)[0m
+[31m    ユーザのプロフィール情報更新成功時 (FAILED - 4)[0m
 [32m    投稿データの新規投稿成功時: 投稿一覧画面から行います。[0m
-[31m    投稿データの更新成功時 (FAILED - 7)[0m
+[32m    投稿データの更新成功時[0m
   処理失敗時のテスト
     ユーザ新規登録失敗: nameを1文字にする
 [32m      新規登録されない[0m
@@ -206,7 +206,7 @@ Userモデルのテスト
 [32m      バリデーションエラーが表示される[0m
     ユーザのプロフィール情報編集失敗: nameを1文字にする
 [32m      更新されない[0m
-[31m      ユーザ編集画面を表示しており、フォームの内容が正しい (FAILED - 8)[0m
+[31m      ユーザ編集画面を表示しており、フォームの内容が正しい (FAILED - 5)[0m
 [32m      バリデーションエラーが表示される[0m
     投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする
 [32m      投稿が保存されない[0m
@@ -215,7 +215,7 @@ Userモデルのテスト
 [32m      バリデーションエラーが表示される[0m
     投稿データの更新失敗: titleを空にする
 [32m      投稿が更新されない[0m
-[31m      投稿編集画面を表示しており、フォームの内容が正しい (FAILED - 9)[0m
+[32m      投稿編集画面を表示しており、フォームの内容が正しい[0m
 [32m      エラーメッセージが表示される[0m
   ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する
 [32m    ユーザ一覧画面[0m
@@ -236,25 +236,25 @@ Userモデルのテスト
 [32m        投稿の削除リンクが表示されない[0m
       サイドバーの確認
 [32m        他人の名前と紹介文が表示される[0m
-[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 10)[0m
+[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 6)[0m
 [32m        自分の名前と紹介文は表示されない[0m
 [32m        自分のユーザ編集画面へのリンクは存在しない[0m
     他人の投稿編集画面
-[31m      遷移できず、投稿一覧画面にリダイレクトされる (FAILED - 11)[0m
+[32m      遷移できず、投稿一覧画面にリダイレクトされる[0m
     他人のユーザ詳細画面のテスト
       表示の確認
 [32m        URLが正しい[0m
-[31m        投稿一覧のユーザ画像のリンク先が正しい (FAILED - 12)[0m
+[32m        投稿一覧のユーザ画像のリンク先が正しい[0m
 [32m        投稿一覧に他人の投稿のtitleが表示され、リンクが正しい[0m
 [32m        投稿一覧に他人の投稿のopinionが表示される[0m
 [32m        自分の投稿は表示されない[0m
       サイドバーの確認
 [32m        他人の名前と紹介文が表示される[0m
-[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 13)[0m
+[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 7)[0m
 [32m        自分の名前と紹介文は表示されない[0m
 [32m        自分のユーザ編集画面へのリンクは存在しない[0m
     他人のユーザ情報編集画面
-[31m      遷移できず、自分のユーザ詳細画面にリダイレクトされる (FAILED - 14)[0m
+[32m      遷移できず、自分のユーザ詳細画面にリダイレクトされる[0m
   グリッドシステムのテスト: container, row, col-md-〇を正しく使えている
 [32m    ユーザ一覧画面[0m
 [32m    ユーザ詳細画面[0m
@@ -284,54 +284,44 @@ Userモデルのテスト
 投稿のテスト
   トップ画面(root_path)のテスト
     表示の確認
-[31m      トップ画面(root_path)に一覧ページへのリンクが表示されているか (FAILED - 15)[0m
+[31m      トップ画面(root_path)に一覧ページへのリンクが表示されているか (FAILED - 8)[0m
 [32m      root_pathが"/"であるか[0m
   一覧画面のテスト
     一覧の表示とリンクの確認
-[31m      bookの一覧表示(tableタグ)と投稿フォームが同一画面に表示されているか (FAILED - 16)[0m
-[31m      bookのタイトルと感想を表示し、詳細・編集・削除のリンクが表示されているか (FAILED - 17)[0m
-[31m      Create Bookボタンが表示される (FAILED - 18)[0m
+[31m      bookの一覧表示(tableタグ)と投稿フォームが同一画面に表示されているか (FAILED - 9)[0m
+[31m      bookのタイトルと感想を表示し、詳細・編集・削除のリンクが表示されているか (FAILED - 10)[0m
+[31m      Create Bookボタンが表示される (FAILED - 11)[0m
     投稿処理に関するテスト
-[31m      投稿に成功しサクセスメッセージが表示されるか (FAILED - 19)[0m
-[31m      投稿に失敗する (FAILED - 20)[0m
-[31m      投稿後のリダイレクト先は正しいか (FAILED - 21)[0m
+[31m      投稿に成功しサクセスメッセージが表示されるか (FAILED - 12)[0m
+[31m      投稿に失敗する (FAILED - 13)[0m
+[31m      投稿後のリダイレクト先は正しいか (FAILED - 14)[0m
     book削除のテスト
 [32m      bookの削除[0m
   詳細画面のテスト
     表示の確認
-[31m      本のタイトルと感想が画面に表示されていること (FAILED - 22)[0m
-[31m      Editリンクが表示される (FAILED - 23)[0m
-[31m      Backリンクが表示される (FAILED - 24)[0m
+[31m      本のタイトルと感想が画面に表示されていること (FAILED - 15)[0m
+[31m      Editリンクが表示される (FAILED - 16)[0m
+[31m      Backリンクが表示される (FAILED - 17)[0m
     リンクの遷移先の確認
-[31m      Editの遷移先は編集画面か (FAILED - 25)[0m
-[31m      Backの遷移先は一覧画面か (FAILED - 26)[0m
+[31m      Editの遷移先は編集画面か (FAILED - 18)[0m
+[31m      Backの遷移先は一覧画面か (FAILED - 19)[0m
   編集画面のテスト
     表示の確認
-[31m      編集前のタイトルと感想がフォームに表示(セット)されている (FAILED - 27)[0m
-[31m      Update Bookボタンが表示される (FAILED - 28)[0m
-[31m      Showリンクが表示される (FAILED - 29)[0m
-[31m      Backリンクが表示される (FAILED - 30)[0m
+[31m      編集前のタイトルと感想がフォームに表示(セット)されている (FAILED - 20)[0m
+[31m      Update Bookボタンが表示される (FAILED - 21)[0m
+[31m      Showリンクが表示される (FAILED - 22)[0m
+[31m      Backリンクが表示される (FAILED - 23)[0m
     リンクの遷移先の確認
-[31m      Showの遷移先は詳細画面か (FAILED - 31)[0m
-[31m      Backの遷移先は一覧画面か (FAILED - 32)[0m
+[31m      Showの遷移先は詳細画面か (FAILED - 24)[0m
+[31m      Backの遷移先は一覧画面か (FAILED - 25)[0m
     更新処理に関するテスト
-[31m      更新に成功しサクセスメッセージが表示されるか (FAILED - 33)[0m
-[31m      更新に失敗しエラーメッセージが表示されるか (FAILED - 34)[0m
-[31m      更新後のリダイレクト先は正しいか (FAILED - 35)[0m
+[31m      更新に成功しサクセスメッセージが表示されるか (FAILED - 26)[0m
+[31m      更新に失敗しエラーメッセージが表示されるか (FAILED - 27)[0m
+[31m      更新後のリダイレクト先は正しいか (FAILED - 28)[0m
 
 Failures:
 
-  1) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 title編集フォームが表示される
-     [31mFailure/Error: expect(page).to have_field 'book[title]', with: book.title[0m
-     [31m  expected to find visible field "book[title]" that is not disabled with value "zhqgd" but there were no matches. Also found "", which matched the selector but not all filters. Expected value to be "zhqgd" but was nil[0m
-     [36m# ./spec/system/02_after_login_spec.rb:210:in `block (4 levels) in <main>'[0m
-
-  2) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 opinion編集フォームが表示される
-     [31mFailure/Error: expect(page).to have_field 'book[body]', with: book.body[0m
-     [31m  expected to find visible field "book[body]" that is not disabled with value "2s919gwhddahmoq37epd" but there were no matches. Also found "", which matched the selector but not all filters. Expected value to be "2s919gwhddahmoq37epd" but was ""[0m
-     [36m# ./spec/system/02_after_login_spec.rb:213:in `block (4 levels) in <main>'[0m
-
-  3) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する
+  1) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する
      [31mFailure/Error: expect(all('img').size).to eq(3)[0m
      [31m[0m
      [31m  expected: 3[0m
@@ -340,92 +330,59 @@ Failures:
      [31m  (compared using ==)[0m
      [36m# ./spec/system/02_after_login_spec.rb:258:in `block (4 levels) in <main>'[0m
 
-  4) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 名前編集フォームに自分の名前が表示される
+  2) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 名前編集フォームに自分の名前が表示される
      [31mFailure/Error: expect(page).to have_field 'user[name]', with: user.name[0m
-     [31m  expected to find visible field "user[name]" that is not disabled with value "ig8rg8qr9c" but there were no matches. Also found "", which matched the selector but not all filters. Expected value to be "ig8rg8qr9c" but was nil[0m
+     [31m  expected to find visible field "user[name]" that is not disabled with value "izyoh2jptm" but there were no matches. Also found "", which matched the selector but not all filters. Expected value to be "izyoh2jptm" but was nil[0m
      [36m# ./spec/system/02_after_login_spec.rb:363:in `block (4 levels) in <main>'[0m
 
-  5) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 自己紹介編集フォームに自分の自己紹介文が表示される
+  3) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 自己紹介編集フォームに自分の自己紹介文が表示される
      [31mFailure/Error: expect(page).to have_field 'user[introduction]', with: user.introduction[0m
-     [31m  expected to find visible field "user[introduction]" that is not disabled with value "52facz17mix433kvm517" but there were no matches. Also found "", which matched the selector but not all filters. Expected value to be "52facz17mix433kvm517" but was ""[0m
+     [31m  expected to find visible field "user[introduction]" that is not disabled with value "3943wk7scaeo9i8qtoh8" but there were no matches. Also found "", which matched the selector but not all filters. Expected value to be "3943wk7scaeo9i8qtoh8" but was ""[0m
      [36m# ./spec/system/02_after_login_spec.rb:369:in `block (4 levels) in <main>'[0m
 
-  6) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザのプロフィール情報更新成功時
+  4) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザのプロフィール情報更新成功時
      [31mFailure/Error: is_expected.to have_content 'successfully'[0m
      [31m  expected to find text "successfully" in "Bookers\nHome Users Books Logout 　 　　　　 　　　\n　 　 　\n1 errors prohibited this object from being saved\nName is too short (minimum is 2 characters)\nUser Info\nName\nImage\nIntroduction\nShow | Back\nCopyRight KenInoue.inc"[0m
      [36m# ./spec/system/03_finishing_touches_spec.rb:45:in `block (3 levels) in <main>'[0m
 
-  7) [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの更新成功時
-     [31mFailure/Error: is_expected.to have_content 'successfully'[0m
-     [31m  expected to find text "successfully" in "Bookers\nHome Users Books Logout 　 　　　　 　　　\n　 　 　\n2 errors prohibited this book from being saved\nTitle can't be blank Body can't be blank\nEditing Book\ntitle\nopinion\nShow | Back\nCopyRight KenInoue.inc"[0m
-     [36m# ./spec/system/03_finishing_touches_spec.rb:65:in `block (3 levels) in <main>'[0m
-
-  8) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする ユーザ編集画面を表示しており、フォームの内容が正しい
+  5) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする ユーザ編集画面を表示しており、フォームの内容が正しい
      [31mFailure/Error: expect(page).to have_field 'user[name]', with: @name[0m
-     [31m  expected to find visible field "user[name]" that is not disabled with value "6" but there were no matches. Also found "", which matched the selector but not all filters. Expected value to be "6" but was nil[0m
+     [31m  expected to find visible field "user[name]" that is not disabled with value "q" but there were no matches. Also found "", which matched the selector but not all filters. Expected value to be "q" but was nil[0m
      [36m# ./spec/system/03_finishing_touches_spec.rb:113:in `block (4 levels) in <main>'[0m
 
-  9) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする 投稿編集画面を表示しており、フォームの内容が正しい
-     [31mFailure/Error: expect(page).to have_field 'book[body]', with: book.body[0m
-     [31m  expected to find visible field "book[body]" that is not disabled with value "pqou0cdzxxqti2x125uk" but there were no matches. Also found "", which matched the selector but not all filters. Expected value to be "pqou0cdzxxqti2x125uk" but was ""[0m
-     [36m# ./spec/system/03_finishing_touches_spec.rb:168:in `block (4 levels) in <main>'[0m
+  6) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
+     [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(other_user)[0m
+     [31m  expected to find link "" with href "/users/1/edit" but there were no matches[0m
+     [36m# ./spec/system/03_finishing_touches_spec.rb:248:in `block (5 levels) in <main>'[0m
 
-  10) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
-      [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(other_user)[0m
-      [31m  expected to find link "" with href "/users/1/edit" but there were no matches[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:248:in `block (5 levels) in <main>'[0m
+  7) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
+     [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(other_user)[0m
+     [31m  expected to find link "" with href "/users/1/edit" but there were no matches[0m
+     [36m# ./spec/system/03_finishing_touches_spec.rb:297:in `block (5 levels) in <main>'[0m
 
-  11) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿編集画面 遷移できず、投稿一覧画面にリダイレクトされる
-      [31mFailure/Error: expect(current_path).to eq '/books'[0m
-      [31m[0m
-      [31m  expected: "/books"[0m
-      [31m       got: "/books/2/edit"[0m
-      [31m[0m
-      [31m  (compared using ==)[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:263:in `block (4 levels) in <main>'[0m
+  8) 投稿のテスト トップ画面(root_path)のテスト 表示の確認 トップ画面(root_path)に一覧ページへのリンクが表示されているか
+     [31mFailure/Error: expect(page).to have_link "", href: books_path[0m
+     [31m  expected to find link "" with href "/books" but there were no matches[0m
+     [36m# ./spec/system/books_spec.rb:11:in `block (4 levels) in <main>'[0m
 
-  12) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい
-      [31mFailure/Error: expect(page).to have_link '', href: user_path(other_user)[0m
-      [31m  expected to find link "" with href "/users/1" but there were no matches[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:277:in `block (5 levels) in <main>'[0m
+  9) 投稿のテスト 一覧画面のテスト 一覧の表示とリンクの確認 bookの一覧表示(tableタグ)と投稿フォームが同一画面に表示されているか
+     [31mFailure/Error: expect(page).to have_selector 'table'[0m
+     [31m  expected to find css "table" but there were no matches[0m
+     [36m# ./spec/system/books_spec.rb:24:in `block (4 levels) in <main>'[0m
 
-  13) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
-      [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(other_user)[0m
-      [31m  expected to find link "" with href "/users/1/edit" but there were no matches[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:297:in `block (5 levels) in <main>'[0m
-
-  14) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ情報編集画面 遷移できず、自分のユーザ詳細画面にリダイレクトされる
-      [31mFailure/Error: expect(current_path).to eq '/users/' + user.id.to_s[0m
-      [31m[0m
-      [31m  expected: "/users/2"[0m
-      [31m       got: "/users/1/edit"[0m
-      [31m[0m
-      [31m  (compared using ==)[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:312:in `block (4 levels) in <main>'[0m
-
-  15) 投稿のテスト トップ画面(root_path)のテスト 表示の確認 トップ画面(root_path)に一覧ページへのリンクが表示されているか
-      [31mFailure/Error: expect(page).to have_link "", href: books_path[0m
-      [31m  expected to find link "" with href "/books" but there were no matches[0m
-      [36m# ./spec/system/books_spec.rb:11:in `block (4 levels) in <main>'[0m
-
-  16) 投稿のテスト 一覧画面のテスト 一覧の表示とリンクの確認 bookの一覧表示(tableタグ)と投稿フォームが同一画面に表示されているか
-      [31mFailure/Error: expect(page).to have_selector 'table'[0m
-      [31m  expected to find css "table" but there were no matches[0m
-      [36m# ./spec/system/books_spec.rb:24:in `block (4 levels) in <main>'[0m
-
-  17) 投稿のテスト 一覧画面のテスト 一覧の表示とリンクの確認 bookのタイトルと感想を表示し、詳細・編集・削除のリンクが表示されているか
+  10) 投稿のテスト 一覧画面のテスト 一覧の表示とリンクの確認 bookのタイトルと感想を表示し、詳細・編集・削除のリンクが表示されているか
       [31mFailure/Error: expect(page).to have_content book.title[0m
       [31m  expected to find text "hoge" in "Bookers\nHome About Sign UP LogIn 　　　　　　　 　　　　 　　　\n　 　 　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight KenInoue.inc"[0m
       [36m# ./spec/system/books_spec.rb:35:in `block (5 levels) in <main>'[0m
       [36m# ./spec/system/books_spec.rb:33:in `each_with_index'[0m
       [36m# ./spec/system/books_spec.rb:33:in `block (4 levels) in <main>'[0m
 
-  18) 投稿のテスト 一覧画面のテスト 一覧の表示とリンクの確認 Create Bookボタンが表示される
+  11) 投稿のテスト 一覧画面のテスト 一覧の表示とリンクの確認 Create Bookボタンが表示される
       [31mFailure/Error: expect(page).to have_button 'Create Book'[0m
       [31m  expected to find button "Create Book" that is not disabled but there were no matches[0m
       [36m# ./spec/system/books_spec.rb:52:in `block (4 levels) in <main>'[0m
 
-  19) 投稿のテスト 一覧画面のテスト 投稿処理に関するテスト 投稿に成功しサクセスメッセージが表示されるか
+  12) 投稿のテスト 一覧画面のテスト 投稿処理に関するテスト 投稿に成功しサクセスメッセージが表示されるか
       [31mFailure/Error: fill_in 'book[title]', with: Faker::Lorem.characters(number:5)[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -439,7 +396,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.35.3/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/books_spec.rb:57:in `block (4 levels) in <main>'[0m
 
-  20) 投稿のテスト 一覧画面のテスト 投稿処理に関するテスト 投稿に失敗する
+  13) 投稿のテスト 一覧画面のテスト 投稿処理に関するテスト 投稿に失敗する
       [31mFailure/Error: click_button 'Create Book'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -453,7 +410,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.35.3/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/books_spec.rb:63:in `block (4 levels) in <main>'[0m
 
-  21) 投稿のテスト 一覧画面のテスト 投稿処理に関するテスト 投稿後のリダイレクト先は正しいか
+  14) 投稿のテスト 一覧画面のテスト 投稿処理に関するテスト 投稿後のリダイレクト先は正しいか
       [31mFailure/Error: fill_in 'book[title]', with: Faker::Lorem.characters(number:5)[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -467,12 +424,12 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.35.3/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/books_spec.rb:68:in `block (4 levels) in <main>'[0m
 
-  22) 投稿のテスト 詳細画面のテスト 表示の確認 本のタイトルと感想が画面に表示されていること
+  15) 投稿のテスト 詳細画面のテスト 表示の確認 本のタイトルと感想が画面に表示されていること
       [31mFailure/Error: expect(page).to have_content book.title[0m
       [31m  expected to find text "hoge" in "Bookers\nHome About Sign UP LogIn 　　　　　　　 　　　　 　　　\n　 　 　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight KenInoue.inc"[0m
       [36m# ./spec/system/books_spec.rb:87:in `block (4 levels) in <main>'[0m
 
-  23) 投稿のテスト 詳細画面のテスト 表示の確認 Editリンクが表示される
+  16) 投稿のテスト 詳細画面のテスト 表示の確認 Editリンクが表示される
       [31mFailure/Error: expect(edit_link.native.inner_text).to match(/edit/i)[0m
       [31m[0m
       [31m  expected " Bookers" to match /edit/i[0m
@@ -483,7 +440,7 @@ Failures:
       [31m  [0m[0m
       [36m# ./spec/system/books_spec.rb:92:in `block (4 levels) in <main>'[0m
 
-  24) 投稿のテスト 詳細画面のテスト 表示の確認 Backリンクが表示される
+  17) 投稿のテスト 詳細画面のテスト 表示の確認 Backリンクが表示される
       [31mFailure/Error: expect(back_link.native.inner_text).to match(/back/i)[0m
       [31m[0m
       [31m  expected "Home" to match /back/i[0m
@@ -494,7 +451,7 @@ Failures:
       [31m  [0m[0m
       [36m# ./spec/system/books_spec.rb:96:in `block (4 levels) in <main>'[0m
 
-  25) 投稿のテスト 詳細画面のテスト リンクの遷移先の確認 Editの遷移先は編集画面か
+  18) 投稿のテスト 詳細画面のテスト リンクの遷移先の確認 Editの遷移先は編集画面か
       [31mFailure/Error: expect(current_path).to eq('/books/' + book.id.to_s + '/edit')[0m
       [31m[0m
       [31m  expected: "/books/1/edit"[0m
@@ -503,22 +460,22 @@ Failures:
       [31m  (compared using ==)[0m
       [36m# ./spec/system/books_spec.rb:103:in `block (4 levels) in <main>'[0m
 
-  26) 投稿のテスト 詳細画面のテスト リンクの遷移先の確認 Backの遷移先は一覧画面か
+  19) 投稿のテスト 詳細画面のテスト リンクの遷移先の確認 Backの遷移先は一覧画面か
       [31mFailure/Error: expect(page).to have_current_path books_path[0m
       [31m  expected "/" to equal "/books"[0m
       [36m# ./spec/system/books_spec.rb:108:in `block (4 levels) in <main>'[0m
 
-  27) 投稿のテスト 編集画面のテスト 表示の確認 編集前のタイトルと感想がフォームに表示(セット)されている
+  20) 投稿のテスト 編集画面のテスト 表示の確認 編集前のタイトルと感想がフォームに表示(セット)されている
       [31mFailure/Error: expect(page).to have_field 'book[title]', with: book.title[0m
       [31m  expected to find field "book[title]" that is not disabled but there were no matches[0m
       [36m# ./spec/system/books_spec.rb:118:in `block (4 levels) in <main>'[0m
 
-  28) 投稿のテスト 編集画面のテスト 表示の確認 Update Bookボタンが表示される
+  21) 投稿のテスト 編集画面のテスト 表示の確認 Update Bookボタンが表示される
       [31mFailure/Error: expect(page).to have_button 'Update Book'[0m
       [31m  expected to find button "Update Book" that is not disabled but there were no matches[0m
       [36m# ./spec/system/books_spec.rb:122:in `block (4 levels) in <main>'[0m
 
-  29) 投稿のテスト 編集画面のテスト 表示の確認 Showリンクが表示される
+  22) 投稿のテスト 編集画面のテスト 表示の確認 Showリンクが表示される
       [31mFailure/Error: expect(show_link.native.inner_text).to match(/show/i)[0m
       [31m[0m
       [31m  expected " Bookers" to match /show/i[0m
@@ -529,7 +486,7 @@ Failures:
       [31m  [0m[0m
       [36m# ./spec/system/books_spec.rb:126:in `block (4 levels) in <main>'[0m
 
-  30) 投稿のテスト 編集画面のテスト 表示の確認 Backリンクが表示される
+  23) 投稿のテスト 編集画面のテスト 表示の確認 Backリンクが表示される
       [31mFailure/Error: expect(back_link.native.inner_text).to match(/back/i)[0m
       [31m[0m
       [31m  expected "Home" to match /back/i[0m
@@ -540,7 +497,7 @@ Failures:
       [31m  [0m[0m
       [36m# ./spec/system/books_spec.rb:130:in `block (4 levels) in <main>'[0m
 
-  31) 投稿のテスト 編集画面のテスト リンクの遷移先の確認 Showの遷移先は詳細画面か
+  24) 投稿のテスト 編集画面のテスト リンクの遷移先の確認 Showの遷移先は詳細画面か
       [31mFailure/Error: expect(current_path).to eq('/books/' + book.id.to_s)[0m
       [31m[0m
       [31m  expected: "/books/1"[0m
@@ -549,12 +506,12 @@ Failures:
       [31m  (compared using ==)[0m
       [36m# ./spec/system/books_spec.rb:137:in `block (4 levels) in <main>'[0m
 
-  32) 投稿のテスト 編集画面のテスト リンクの遷移先の確認 Backの遷移先は一覧画面か
+  25) 投稿のテスト 編集画面のテスト リンクの遷移先の確認 Backの遷移先は一覧画面か
       [31mFailure/Error: expect(page).to have_current_path books_path[0m
       [31m  expected "/" to equal "/books"[0m
       [36m# ./spec/system/books_spec.rb:142:in `block (4 levels) in <main>'[0m
 
-  33) 投稿のテスト 編集画面のテスト 更新処理に関するテスト 更新に成功しサクセスメッセージが表示されるか
+  26) 投稿のテスト 編集画面のテスト 更新処理に関するテスト 更新に成功しサクセスメッセージが表示されるか
       [31mFailure/Error: fill_in 'book[title]', with: Faker::Lorem.characters(number:5)[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -568,7 +525,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.35.3/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/books_spec.rb:147:in `block (4 levels) in <main>'[0m
 
-  34) 投稿のテスト 編集画面のテスト 更新処理に関するテスト 更新に失敗しエラーメッセージが表示されるか
+  27) 投稿のテスト 編集画面のテスト 更新処理に関するテスト 更新に失敗しエラーメッセージが表示されるか
       [31mFailure/Error: fill_in 'book[title]', with: ""[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -582,7 +539,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.35.3/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/books_spec.rb:153:in `block (4 levels) in <main>'[0m
 
-  35) 投稿のテスト 編集画面のテスト 更新処理に関するテスト 更新後のリダイレクト先は正しいか
+  28) 投稿のテスト 編集画面のテスト 更新処理に関するテスト 更新後のリダイレクト先は正しいか
       [31mFailure/Error: fill_in 'book[title]', with: Faker::Lorem.characters(number:5)[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -596,25 +553,18 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.35.3/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/books_spec.rb:159:in `block (4 levels) in <main>'[0m
 
-Finished in 17.16 seconds (files took 1.29 seconds to load)
-[31m220 examples, 35 failures[0m
+Finished in 17.11 seconds (files took 1.48 seconds to load)
+[31m220 examples, 28 failures[0m
 
 Failed examples:
 
-[31mrspec ./spec/system/02_after_login_spec.rb:209[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 title編集フォームが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:212[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 opinion編集フォームが表示される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:257[0m [36m# [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:362[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 名前編集フォームに自分の名前が表示される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:368[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 自己紹介編集フォームに自分の自己紹介文が表示される[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:38[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザのプロフィール情報更新成功時[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:58[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの更新成功時[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:112[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする ユーザ編集画面を表示しており、フォームの内容が正しい[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:165[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする 投稿編集画面を表示しており、フォームの内容が正しい[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:247[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:261[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿編集画面 遷移できず、投稿一覧画面にリダイレクトされる[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:276[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:296[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:310[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ情報編集画面 遷移できず、自分のユーザ詳細画面にリダイレクトされる[0m
 [31mrspec ./spec/system/books_spec.rb:10[0m [36m# 投稿のテスト トップ画面(root_path)のテスト 表示の確認 トップ画面(root_path)に一覧ページへのリンクが表示されているか[0m
 [31mrspec ./spec/system/books_spec.rb:23[0m [36m# 投稿のテスト 一覧画面のテスト 一覧の表示とリンクの確認 bookの一覧表示(tableタグ)と投稿フォームが同一画面に表示されているか[0m
 [31mrspec ./spec/system/books_spec.rb:28[0m [36m# 投稿のテスト 一覧画面のテスト 一覧の表示とリンクの確認 bookのタイトルと感想を表示し、詳細・編集・削除のリンクが表示されているか[0m
