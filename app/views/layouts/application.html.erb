@@ -15,7 +15,7 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
         <div class="container-fluid a">
-          <a class="navbar-brand" href="/"><%=image_tag('logo.png') %> Bookers</a>
+           <%= link_to "Bookers", root_path, class: "navbar-brand" %>
 
             <ul class="navbar-nav navbar-right">
               <% if user_signed_in? %>
@@ -23,20 +23,20 @@
                 <%= link_to 'Home', user_path(current_user.id), class:"fas fa-home nav-link text-dark" %>
               </li>
               <li class="nav-item">
-               <a class="fas fa-users nav-link text-dark" href="/users" >Users</a>
+               <%= link_to "Users", users_path, class:"fas fa-users nav-link text-dark" %>
               </li>
                <li class="nav-item">
-               <a class="fas fa-book-open nav-link text-dark" href="/books">Books</a>
+               <%= link_to "Books", books_path, class:"fas fa-book-open nav-link text-dark" %>
                </li>
               <li class="nav-item">
                <%= link_to "Logout", destroy_user_session_path, method: :delete, class:"fas fa-sign-out-alt nav-link text-dark" %>
               </li>
             　<% else %>
                <li class="nav-item">
-                 <a class="fas fa-home nav-link text-dark" href="/">Home</a>
+                 <%= link_to "Home", root_path, class:"fas fa-home nav-link text-dark" %>
                 </li>
                <li class="nav-item">
-                 <a class="fas fa-link nav-link text-dark" href="/home/about">About</a>
+                 <%= link_to "about", about_home_index_path, class:"fas fa-link nav-link text-dark" %>
                </li>
                 <li class="nav-item">
                  <%= link_to "Sign UP", new_user_registration_path, class:"fas fa-user-plus nav-link text-dark" %>
